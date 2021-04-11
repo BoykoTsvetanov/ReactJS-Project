@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
@@ -28,13 +28,13 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/products" className="nav-links">
-                Products
+              <Link to="/logout" className="nav-links">
+                logout
               </Link>
             </li>
 
             <li>
-              <Link to="/sign-up" className="nav-links-mobile">
+              <Link to="/register" className="nav-links-mobile">
                 Sign Up
               </Link>
             </li>
