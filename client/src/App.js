@@ -19,7 +19,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route
             path="/logout"
-            render={(props) => {
+            render={() => {
               localStorage.clear();
               logout();
             }}
