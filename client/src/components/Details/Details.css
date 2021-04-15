@@ -1,0 +1,40 @@
+.dest-details img {
+    /* border:1px solid purple; */
+    max-width: 500px;
+}
+
+.dest-details div.info div.description {
+    border-radius: 15px;
+    /* border: 1px solid var(--main-blue); */
+    color: var(--main-blue);
+    padding: 2%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.dest-details div.buttons {
+    color: var(--main-blue);
+    width: 100%;
+    padding: 2%;
+}
+
+.buttons {
+    padding: 1%;
+    border: 1px solid var(--main-blue);
+    background: var(--main-blue);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.buttons:hover {
+    color: var(--main-orange);
+}
+
+.dest-details img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    /* border: 1px solid var(--main-blue); */
+}

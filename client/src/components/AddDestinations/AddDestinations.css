@@ -1,0 +1,14 @@
+.added-destination {
+    background: url('https://previews.123rf.com/images/anyaberkut/anyaberkut1705/anyaberkut170500400/77333626-travel-background-destination-on-the-world-map.jpg') center center/cover no-repeat;
+    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    padding: 16px;
+}
+

@@ -1,15 +1,16 @@
 import React from "react";
 import "./Register.css";
 import { registerUser } from "../../models/user";
-
-function Register(props) {
+import { saveUserInfo } from "../../config/auth";
+function Register({ history }) {
   const onLoginSubmitHandlr = (e) => {
     e.preventDefault();
     const email = e.target.username.value;
     const password = e.target.password.value;
 
     registerUser(email, password).then((userInfo) => {
-      console.log("regnat");
+      saveUserInfo(email, password);
+      history.push("/");
     });
   };
 
