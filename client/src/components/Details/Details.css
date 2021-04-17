@@ -1,40 +1,68 @@
-.dest-details img {
-    /* border:1px solid purple; */
+.img {
+   
     max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    
 }
 
-.dest-details div.info div.description {
+.dest-details  {
     border-radius: 15px;
     /* border: 1px solid var(--main-blue); */
     color: var(--main-blue);
     padding: 2%;
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
+    background-color:cornflowerblue
 }
 
-.dest-details div.buttons {
-    color: var(--main-blue);
-    width: 100%;
-    padding: 2%;
-}
 
-.buttons {
-    padding: 1%;
-    border: 1px solid var(--main-blue);
-    background: var(--main-blue);
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+.buttonEdit {
+    background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+}
+.buttonDelete {
+    background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 
 .buttons:hover {
     color: var(--main-orange);
 }
-
-.dest-details img {
-    display: block;
-    margin: 0 auto;
+.description {
+    text-align: center;
+}
+.details-dest {
     border-radius: 15px;
     /* border: 1px solid var(--main-blue); */
+    color: var(--main-blue);
+    padding: 2%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.img-destination {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.img-destination:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }

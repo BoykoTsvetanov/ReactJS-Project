@@ -1,6 +1,6 @@
 .edit-destination {
     
-    background: url('https://i.stack.imgur.com/F2zuF.png') center center/cover no-repeat;
+    background: url('https://previews.123rf.com/images/anyaberkut/anyaberkut1705/anyaberkut170500400/77333626-travel-background-destination-on-the-world-map.jpg') center center/cover no-repeat;
     
     height: 100vh;
     width: 100%;
@@ -11,5 +11,8 @@
     box-shadow: inset 0 0 0 1000px rgba(228, 231, 23, 0.2);
     object-fit: contain;
     padding: 16px;
+}
+.edit-destination label {
+    background-color: violet
 }
 

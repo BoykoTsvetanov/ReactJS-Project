@@ -38,14 +38,13 @@ const Login = ({ history }) => {
             </div>
           </div>
         </div>
-        <footer className="footer">
-          <input
-            className="button"
-            type="submit"
-            className="submit"
-            value="Login"
-          />
-        </footer>
+
+        <input
+          className="button"
+          type="submit"
+          className="submit"
+          value="Login"
+        />
       </form>
     </div>
   );

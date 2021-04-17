@@ -1,6 +1,19 @@
 
 
-.dest {
+.destBtn {
+  	  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+.destin {
     vertical-align: top;
     height: 25vh;
     padding: 1%;
@@ -8,38 +21,37 @@
     border-radius: 6px;
 }
 
-.dest:hover {
+.destin:hover {
     border: 2px solid var(--main-blue);
 }
 
-.destBtn {
-    border: 1px solid var(--main-blue);
-    padding: 2%;
-    margin: 0 auto;
-    font-weight: bold;
-    display: block;
-    background-color: white;
-    color: var(--main-orange);
-    border-radius: 15px;
-    bottom: 0;
-    text-decoration: none;
-    text-align: center;
-}
 
-.destination {
+
+.destin h3 {
     text-align: center;
     width: 100%;
     color: var(--main-blue);
     margin-bottom: 5%;
 }
 
-.img {
-    width: 100%;
-    height: 300px;
-    margin-left: 20px;
+.destin img {
+    /* border: 1px solid var(--main-blue); */
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
 }
 
-.destBtn:hover {
-    text-decoration: underline var(--main-orange);
-    cursor: pointer;
+.destin p {
+    text-align: center;
+    width: 100%;
+    color: var(--main-blue);
+    margin-bottom: 5%;
+}
+.dest-info {
+    border-radius: 15px;
+    /* border: 1px solid var(--main-blue); */
+    color: var(--main-blue);
+    padding: 2%;
+    font-size: 20px;
+    text-align: center;
 }

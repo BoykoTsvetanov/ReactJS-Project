@@ -22,38 +22,20 @@
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
+      
   }
-
-  .myButton {
-	box-shadow:inset 0px 1px 0px 0px #97c4fe;
-	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
-	background-color:#3d94f6;
-	border-radius:6px;
-	border:1px solid #337fed;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #1570cd;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
-	background-color: #4CAF50;
-}
-.myButton:active {
-    position:relative;
-	top:1px;
+.myButton {
+	  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
 }
 
-img {
-    width: 35px;
-    height: 35px;
-    margin-top: 25px;
-}
 
 
 .destination-list {
@@ -61,4 +43,23 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
+}
+
+.hero-containers{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.background-img {
+  background: url('https://previews.123rf.com/images/fixzma/fixzma1712/fixzma171200021/92404552-beige-color-of-wooden-table-with-blue-sky-and-sea-background.jpg') center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    padding: 16px;
 }

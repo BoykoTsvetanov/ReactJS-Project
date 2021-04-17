@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component, useContext } from "react";
 import { Link } from "react-router-dom";
 import { getAll } from "../../models/destinations";
 import Destinations from "../Destinations/Destinatons";
@@ -27,12 +27,14 @@ class Home extends Component {
 
   render() {
     const user = localStorage.getItem("user");
+
     return (
       <div className="hero-containers">
         {user ? (
-          <section className="background-img">
-            <div className="added-destinations">
-              <ul className="destination-list">
+          <div className="background-img">
+            <ul>
+              <li>
+                {" "}
                 {this.state.destinations.map((x) => (
                   <Destinations
                     key={x.id}
@@ -43,9 +45,9 @@ class Home extends Component {
                     id={x.id}
                   />
                 ))}
-              </ul>
-            </div>
-          </section>
+              </li>
+            </ul>
+          </div>
         ) : (
           <div className="container-hero">
             <h1>Adventure</h1>

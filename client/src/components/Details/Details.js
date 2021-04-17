@@ -10,13 +10,17 @@ const Details = ({ match, history }) => {
   const [isCreator, setCreator] = useState("");
 
   useEffect(() => {
-    get(destId).then((res) => {
-      const destination = { ...res.data(), id: res.id };
-      const creatorIs = destination.creator == localStorage.getItem("user");
+    get(destId)
+      .then((res) => {
+        const destination = { ...res.data(), id: res.id };
+        const creatorIs = destination.creator === localStorage.getItem("user");
 
-      setDest(destination);
-      setCreator(creatorIs);
-    });
+        setDest(destination);
+        setCreator(creatorIs);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
   const handleDelete = (e) => {
     e.preventDefault();
@@ -30,11 +34,12 @@ const Details = ({ match, history }) => {
   };
   return (
     <div className="dest-details">
-      <h1 className="destination">{dest.destination}</h1>
+      <h3 className="destination">{dest.destination}</h3>
 
-      <div className="info">
-        <img src={dest.imgUrl} />
+      <div className="destination-area-right">
+        <img className="img" src={dest.imgUrl} alt="" />
         <div className="city">{dest.city}</div>
+
         <div className="description">
           {dest.description}
           <br />
@@ -42,11 +47,16 @@ const Details = ({ match, history }) => {
         </div>
       </div>
       {isCreator ? (
-        <div className="buttons">
-          <Link to={`/edit/${destId}`}>Edit</Link>
-          <Link to={`/delete/${destId}`} onClick={handleDelete}>
-            Delete
-          </Link>
+        <div className="details-dest">
+          <button className="buttonEdit">
+            <Link to={`/edit/${destId}`}>Edit</Link>
+          </button>
+          <button className="buttonDelete">
+            {" "}
+            <Link to={`/delete/${destId}`} onClick={handleDelete}>
+              Delete
+            </Link>
+          </button>
         </div>
       ) : (
         <div className="notCreator">

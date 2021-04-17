@@ -18,9 +18,7 @@ const AddDestination = ({ history }) => {
       description,
       creator,
     })
-      .then((res) => {
-        console.log("uspeshno");
-      })
+      .then((res) => {})
       .catch((err) => console.log(err));
 
     history.push("/");

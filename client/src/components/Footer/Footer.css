@@ -1,11 +1,11 @@
 .footer{
-    position: fixed;
+  margin-top: 50px;
     text-align: center;
-    width: 100%;
-    padding: 0;
-    float: left;
+    background: cornflowerblue;
+    padding: 20px 0;
+    color: white;
     position: relative;
-    z-index: 99;
-    background: #14B9D5;
-    height: 30px;
-  }
+    bottom: 0;
+    width: 100%;
+}
+  
