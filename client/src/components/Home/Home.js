@@ -50,7 +50,7 @@ class Home extends Component {
           </div>
         ) : (
           <div className="container-hero">
-            <h1>Adventure</h1>
+            <h1>Adventures</h1>
 
             <Link className="myButton" to="/register">
               Join Us

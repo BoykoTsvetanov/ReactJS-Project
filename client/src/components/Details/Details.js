@@ -60,7 +60,7 @@ const Details = ({ match, history }) => {
         </div>
       ) : (
         <div className="notCreator">
-          <h1>I Was Here</h1>
+          <h1></h1>
         </div>
       )}
     </div>
