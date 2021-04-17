@@ -17,6 +17,6 @@
 ### `Register user area`
     Users can view all added destinations
     User can view all details
-    User-creator can Edit or Delete destination7
+    User-creator can Edit or Delete destination
 
 
