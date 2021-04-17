@@ -5,7 +5,7 @@
 
 ## Idea
 
-    An application that stores informaciton about destinations.
+    An application that stores information about destinations.
 
 ### Design
     The details of the course become visible when one of the following buttons is clicked - >  EDIT / Details 
