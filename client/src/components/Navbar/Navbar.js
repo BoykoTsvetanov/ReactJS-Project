@@ -33,7 +33,7 @@ function Navbar() {
             </li>
 
             <li>
-              <Link to="/register" className="nav-links-mobile">
+              <Link to="/register" className="nav-links">
                 Sign Up
               </Link>
             </li>
