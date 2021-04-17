@@ -1,13 +1,10 @@
 import React, { useState, useContext } from "react";
-import { Button } from "./Button";
+
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import AuthContext from "../../context/Auth";
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-
-  const handleClick = () => setClick(!click);
   const { username } = useContext(AuthContext);
 
   return (
@@ -17,7 +14,7 @@ function Navbar() {
           <Link to="/" className="navbar-logo">
             Travel Around The World
           </Link>
-          <div className="menu-icon" onClick={handleClick}></div>
+          <div className="menu-icon"></div>
           <ul className={"nav-menu active"}>
             <li className="nav-item">
               <Link to="/" className="nav-links">
@@ -48,7 +45,7 @@ function Navbar() {
           <Link to="/" className="navbar-logo">
             Travel Around The World
           </Link>
-          <div className="menu-icon" onClick={handleClick}></div>
+          <div className="menu-icon"></div>
           <ul className={"nav-menu active"}>
             <li className="nav-item">
               <Link to="/" className="nav-links">
@@ -62,7 +59,11 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {<Button buttonStyle="btn--outline">SIGN UP</Button>}
+          <li className="nav-item">
+            <Link to="/login" className="nav-links">
+              SIGN UP
+            </Link>
+          </li>
         </div>
       )}
     </nav>
