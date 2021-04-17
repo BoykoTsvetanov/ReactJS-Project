@@ -20,7 +20,6 @@ function App() {
     firebase.auth().onAuthStateChanged(setUser);
   }, []);
   const authInfo = {
-    isAuth: Boolean(user),
     username: user?.email,
   };
   return (
