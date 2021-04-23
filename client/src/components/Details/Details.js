@@ -1,19 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { get, dlt } from "../../models/destinations";
 import { Link } from "react-router-dom";
-
+import AuthContext from "../../context/Auth";
 import "./Details.css";
 const Details = ({ match, history }) => {
   const destId = match.params.destId;
 
   const [dest, setDest] = useState({});
   const [isCreator, setCreator] = useState("");
-
+  const { username } = useContext(AuthContext);
+  console.log(username);
   useEffect(() => {
     get(destId)
       .then((res) => {
         const destination = { ...res.data(), id: res.id };
-        const creatorIs = destination.creator === localStorage.getItem("user");
+        const creatorIs = destination.creator === username;
 
         setDest(destination);
         setCreator(creatorIs);

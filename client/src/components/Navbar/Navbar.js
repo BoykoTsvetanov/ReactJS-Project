@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 
 import { Link } from "react-router-dom";
 import "./Navbar.css";
@@ -31,12 +31,6 @@ function Navbar() {
                 logout
               </Link>
             </li>
-
-            <li>
-              <Link to="/register" className="nav-links">
-                Sign Up
-              </Link>
-            </li>
           </ul>
           <h1 className="welcome">Welcome, {username}</h1>
         </div>
@@ -58,12 +52,12 @@ function Navbar() {
                 Register
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/login" className="nav-links">
+                SIGN UP
+              </Link>
+            </li>
           </ul>
-          <li className="nav-item">
-            <Link to="/login" className="nav-links">
-              SIGN UP
-            </Link>
-          </li>
         </div>
       )}
     </nav>
